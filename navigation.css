@@ -1,0 +1,45 @@
+/*
+Instructions:
+
+Create a navigation bar out of an unordered list element, and add the following interactivity.
+
+When the user hovers over one of the links, the color of the text should change.
+When the user hovers over one of the links, the background color of the element that contains the link should change.
+When the user clicks on one of the links, the element that contains the link should grow in size by 5px on the left and right.*/
+
+nav {
+    background-color: lightpink;
+    height: 50px;
+}
+
+nav h1 {
+    float: left;
+}
+
+/*To float nav bar right but have list in right order, have to float ul right, but float li left */
+nav ul{
+    float: right;
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+    margin: 5px 15px 0 15px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    cursor:pointer;
+}
+
+nav li:hover {
+    color: lightgreen;
+    background-color: brown;
+}
+
+nav li:onclick {
+    font-size: 5px;
+}
+/*This seems to do the trick.  Correct?*/
+nav li:active {
+    padding: 0 5px;
+}
+
+/*EXERCISE COMPLETE*/
